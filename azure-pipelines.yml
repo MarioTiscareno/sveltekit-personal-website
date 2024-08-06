@@ -9,6 +9,7 @@ trigger:
 variables:
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
+  ServiceConnection: '4133c3a3-f971-429c-a0c3-9758099f9545'
 
 pool:
   vmImage: ubuntu-latest
