@@ -7,10 +7,6 @@ trigger:
   - main
 
 variables:
-  # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '$(ServiceConnection)'
-  imageRepository: '$(ImageRepository)'
-  containerRegistry: '$(ContainerRegistry)'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
 
@@ -27,18 +23,18 @@ stages:
           - task: Docker@2
             displayName: Build image
             inputs:
-              arguments: '--build-arg SENDGRID_API_KEY=$(SENDGRID_API_KEY) --build-arg SENDGRID_SENDER=$(SENDGRID_SENDER) --build-arg MAILGUN_DOMAIN=$(MAILGUN_DOMAIN) --build-arg MAILGUN_API_KEY=$(MAILGUN_API_KEY) --build-arg MAILGUN_SENDER=$(MAILGUN_SENDER) --build-arg MAIL_PROVIDER=$(MAIL_PROVIDER)'
+              arguments: '--build-arg SENDGRID_API_KEY=$(SENDGRID_API_KEY) --build-arg SENDGRID_SENDER=$(SENDGRID_SENDER) --build-arg MAILGUN_DOMAIN=$(MAILGUN_DOMAIN) --build-arg MAILGUN_API_KEY=$(MAILGUN_API_KEY) --build-arg MAILGUN_SENDER=$(MAILGUN_SENDER) --build-arg MAIL_PROVIDER=$(MAIL_PROVIDER) --build-arg EMAIL_TO=$(EMAIL_TO)'
               command: build
-              repository: $(imageRepository)
+              repository: $(ImageRepository)
               dockerfile: $(dockerfilePath)
-              containerRegistry: $(dockerRegistryServiceConnection)
+              containerRegistry: $(ServiceConnection)
               tags: |
                 $(tag)
           - task: Docker@2
             displayName: Push an image to container registry
             inputs:
               command: push
-              repository: $(imageRepository)
-              containerRegistry: $(dockerRegistryServiceConnection)
+              repository: $(ImageRepository)
+              containerRegistry: $(ServiceConnection)
               tags: |
                 $(tag)
