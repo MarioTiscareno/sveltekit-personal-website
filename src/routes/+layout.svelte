@@ -44,7 +44,10 @@
 		</li>
 		<li class="flex-1"></li>
 		<li>
-			<a href="https://github.com/MarioTiscareno" class="-mr-1 block h-10 w-10 p-1">
+			<a
+				href="https://github.com/MarioTiscareno/sveltekit-personal-website"
+				class="-mr-1 block h-10 w-10 p-1"
+			>
 				<GitHub />
 			</a>
 		</li>

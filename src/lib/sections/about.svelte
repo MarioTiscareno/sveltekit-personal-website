@@ -45,7 +45,7 @@
 				On this page you'll find a resume of sorts, so keep scrolling to find more about what I do.
 				You can report bugs in the <a
 					class="text-[#fce4b8] underline underline-offset-2"
-					href="https://github.com/mtiscareno">GitHub repo</a
+					href="https://github.com/MarioTiscareno/sveltekit-personal-website">GitHub repo</a
 				> or leave a star if you like what you see. Yes, all of this is open source so feel free to take
 				a peek.
 			</p>
