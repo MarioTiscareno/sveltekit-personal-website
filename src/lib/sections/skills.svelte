@@ -110,7 +110,7 @@
 				<p
 					class="mb-2 text-pretty text-2xl font-bold leading-tight tracking-tight text-slate-700 md:text-3xl"
 				>
-					These are some the things I know, tools I have used
+					These are some of the things I know, tools I have used
 				</p>
 				<p class="text-lg text-slate-500">...and stuff that I am still improving on.</p>
 			</div>
