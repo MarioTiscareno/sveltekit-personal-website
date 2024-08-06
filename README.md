@@ -66,8 +66,4 @@ DON'T remove any variables from the .env file, as this will break the build, ins
 
 ## Acknowledgements 🙏
 
-Thanks to:
-
-- [Svelte team](https://github.com/sveltejs)
-- [Tailwind team](https://github.com/tailwindlabs)
-- [daylilyfield for svrollbar component](https://github.com/daylilyfield/svrollbar)
+- [I am using daylilyfield's very cool svrollbar component](https://github.com/daylilyfield/svrollbar)
