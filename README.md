@@ -4,6 +4,10 @@ I created this website to serve as my online resume. I wouldn't call it a portfo
 
 Demo: [https://mario.tiscareno.dev](https://mario.tiscareno.dev)
 
+<p align="left">
+    <img width="600" height="auto" src="https://i.imgur.com/oAcf7tx.png" alt="screenshot" />
+</p>
+
 WARNING: This is using Svelte 5 which is not yet production ready.
 
 ## Features ✨
