@@ -1,40 +1,48 @@
 <script lang="ts">
-	export let style: 'glass' | 'dark' | 'light' = 'dark';
-
-	export let blurred = false;
+	let {
+		children,
+		close = null,
+		class: className = '',
+		style = 'dark',
+		blurred = false
+	}: {
+		close?: any;
+		class?: string;
+		style?: 'dark' | 'light';
+		blurred?: boolean;
+		children?: any;
+	} = $props();
 
 	let dark = style === 'dark';
-	let glass = style === 'glass';
 	let light = style === 'light';
 </script>
 
 <div
-	class={($$restProps.class ?? '') + ' relative z-50 h-fit rounded-lg py-4 pl-6 pr-8'}
+	class={(className ?? '') + ' relative z-50 h-fit rounded-lg py-4 pl-6 pr-8'}
 	class:dark
 	class:light
-	class:glass
 	class:blurred
 >
 	<div class="-ml-2 mb-4 flex gap-2">
-		<div class="h-3 w-3 rounded-full bg-red-400"></div>
+		{#if close}
+			<!-- functional button -->
+			<button class="h-3 w-3 rounded-full bg-red-400 transition hover:brightness-90" onclick={close}
+			></button>
+		{:else}
+			<!-- purely decoration -->
+			<div class="h-3 w-3 rounded-full bg-red-400"></div>
+		{/if}
 		<div class="h-3 w-3 rounded-full bg-yellow-400"></div>
-		<div class="h-3 w-3 rounded-full bg-green-600"></div>
+		<div class="h-3 w-3 rounded-full bg-green-400"></div>
 	</div>
 	<div class="counter-reset-line -ml-2 pt-4 text-sm">
-		<slot />
+		{@render children()}
 	</div>
 </div>
 
 <style lang="postcss">
 	.counter-reset-line {
 		counter-reset: line;
-	}
-
-	.glass {
-		background: rgba(255, 255, 255, 0.2);
-		backdrop-filter: blur(10px);
-		-webkit-backdrop-filter: blur(10px);
-		border: 1px solid rgba(255, 255, 255, 0.25);
 	}
 
 	.dark {

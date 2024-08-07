@@ -16,9 +16,20 @@
 
 	let { visible } = modal;
 
-	function toggleModal(event: MouseEvent) {
+	function handleClickClose(event: PointerEvent) {
 		if ((event as PointerEvent)?.pointerId === -1) return;
 
+		toggleModal();
+	}
+
+	function handleEscapeClose(event: KeyboardEvent) {
+		console.log(event);
+		if (event.key !== 'Escape') return;
+
+		toggleModal();
+	}
+
+	function toggleModal() {
 		visible.set(!$visible);
 	}
 
@@ -104,7 +115,8 @@
 	<button
 		transition:fade
 		class="fixed top-0 z-[100] flex h-full w-full cursor-default items-center justify-center bg-white/70 sm:bg-white/50 sm:backdrop-blur"
-		onclick={preventDefault(self(toggleModal))}
+		onclick={preventDefault(self(handleClickClose))}
+		onkeydown={handleEscapeClose}
 		use:focus
 		use:trapFocus
 	>
