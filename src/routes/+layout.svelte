@@ -63,10 +63,7 @@
 			</a>
 		</li>
 		<li>
-			<a
-				href="https://www.linkedin.com/in/mario-tiscare%C3%B1o-37382a5b/"
-				class="-mr-1 block h-10 w-10 p-1"
-			>
+			<a href="https://www.linkedin.com/in/mario-tiscareno/" class="-mr-1 block h-10 w-10 p-1">
 				<LinkedIn />
 			</a>
 		</li>
@@ -101,7 +98,7 @@
 				</a>
 
 				<a
-					href="https://www.linkedin.com/in/mario-tiscare%C3%B1o-37382a5b/"
+					href="https://www.linkedin.com/in/mario-tiscareno/"
 					class="-mr-1 -mt-1 block h-10 w-10 p-1"
 				>
 					<LinkedIn />
@@ -142,5 +139,11 @@
 	:global(.tech-icon:hover .tooltip) {
 		visibility: visible;
 		z-index: 100;
+	}
+
+	@media (max-width: 768px) {
+		:global(.v-scrollbar) {
+			display: none;
+		}
 	}
 </style>
