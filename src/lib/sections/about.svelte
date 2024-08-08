@@ -22,7 +22,7 @@
 			<p class="text-sm leading-normal text-slate-400 sm:text-base">
 				I've mostly worked on backend stuff in C# and the .NET space, but I have some experience
 				with frontend frameworks like Svelte and React. I also use Python and Go in my personal
-				projects
+				projects.
 			</p>
 			<p class="mt-8 text-sm leading-normal text-slate-400 sm:text-base">
 				In my almost 2 decades of programming, I have seen many trends and fads in my trade. I used
