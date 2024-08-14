@@ -25,35 +25,43 @@ Everything is on one page, which works for what I need right now.
 
 ## Install and Run ▶️
 
-```
-# Clone this repository
-$ git clone https://github.com/MarioTiscareno/sveltekit-personal-website
-```
+1. Clone this repository
 
-```
-# Go into the repository
-$ cd sveltekit-personal-website
-```
+   ```
+   git clone https://github.com/MarioTiscareno/sveltekit-personal-website
+   ```
 
-```
-# Rename the file .env.example to .env.local
+2. Go into the repository
 
-# Linux Bash
-$ mv .env.example .env.local
+   ```
+   cd sveltekit-personal-website
+   ```
 
-# Windows CMD
-$ ren .env.example .env.local
-```
+3. Rename the file .env.example to .env.local
 
-```
-# Install dependencies
-$ npm install
-```
+   3.1 Linux
 
-```
-# Start the project in development
-$ npm run dev
-```
+   ```
+   mv .env.example .env.local
+   ```
+
+   3.2 Windows
+
+   ```
+   ren .env.example .env.local
+   ```
+
+4. Install dependencies
+
+   ```
+   npm install
+   ```
+
+5. Start the project in development
+
+   ```
+   npm run dev
+   ```
 
 Open your browser and go to `http://localhost:5173`.
 
@@ -61,9 +69,19 @@ Open your browser and go to `http://localhost:5173`.
 
 You can configure SendGrid or Mailgun to receive contact form submissions in your mailbox. This can be handy if you don't want to expose your personal email.
 
-To configure just set the appropriate values in .env.local. MAIL_PROVIDER should be set to 'sendgrid' or 'mailgun', using any other value will not do anything, but you will still get a 200 back from the endpoint.
-DON'T remove any variables from the .env file, as this will break the build, instead you can leave empty what you don't need.
+To configure just set the appropriate values in .env.local.
 
-## Acknowledgements 🙏
+```bash
+SENDGRID_API_KEY='YOUR_API_KEY'
+SENDGRID_SENDER='sender@your.domain.com'
 
-- [I am using daylilyfield's very cool svrollbar component](https://github.com/daylilyfield/svrollbar)
+MAILGUN_DOMAIN='your.domain.com'
+MAILGUN_API_KEY='YOUR_API_KEY'
+MAILGUN_SENDER='sender@your.domain.com'
+
+EMAIL_TO='receiver@your.domain.com'
+
+MAIL_PROVIDER='mailgun' # mailgun | sendgrid | none
+```
+
+DON'T remove any variables from the .env file, as this will break the build, instead you can set to empty strings what you don't need.

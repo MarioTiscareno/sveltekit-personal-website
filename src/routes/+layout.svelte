@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { Svrollbar } from 'svrollbar';
 	import '../app.css';
 	import { onDestroy, setContext } from 'svelte';
 	import { writable } from 'svelte/store';
@@ -47,7 +46,7 @@
 	onDestroy(unsubscribe);
 </script>
 
-<Svrollbar />
+<!-- <Svrollbar /> -->
 <nav class="absolute left-0 right-0 z-50 mx-auto max-w-7xl p-4 md:p-6">
 	<ul class="flex items-end justify-between text-slate-700">
 		<li>
@@ -122,13 +121,20 @@
 {/if}
 
 <style lang="postcss">
-	:global(html::-webkit-scrollbar, body::-webkit-scrollbar) {
-		/* hide scrollbar */
-		display: none;
+	:global(::-webkit-scrollbar) {
+		width: 0.5rem;
+		height: 1em;
 	}
 
-	:global(.v-scrollbar) {
-		z-index: 100;
+	:global(::-webkit-scrollbar-track) {
+		background: rgb(226 232 240);
+		margin-block: 0.5em;
+	}
+
+	:global(::-webkit-scrollbar-thumb) {
+		background: rgb(71 85 105);
+		border-radius: 100vw;
+		height: 1em;
 	}
 
 	:global(.tooltip) {
@@ -142,7 +148,7 @@
 	}
 
 	@media (max-width: 768px) {
-		:global(.v-scrollbar) {
+		:global(::-webkit-scrollbar) {
 			display: none;
 		}
 	}

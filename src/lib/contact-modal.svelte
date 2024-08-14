@@ -3,7 +3,7 @@
 	import { preventDefault } from '$lib/util';
 	import { fade } from 'svelte/transition';
 
-	let { close } = $props();
+	let { close }: { close: () => void } = $props();
 
 	let contactFirstName = $state('');
 	let contactLastName = $state('');
