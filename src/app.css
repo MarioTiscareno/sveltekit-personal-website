@@ -5,16 +5,30 @@
 html,
 body {
 	font-family: 'Inter', sans-serif;
+	width: auto;
+	overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+	background: rgb(226 232 240);
+	width: 0.5rem;
+	height: 1em;
+}
+
+::-webkit-scrollbar-track {
+	background: rgb(226 232 240);
+	margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(71 85 105);
+	border-radius: 100vw;
+	height: 1em;
 }
 
 @layer utilities {
 	.glass {
-		/* From https://css.glass */
-		/* background: rgba(255, 255, 255, 0.1); */
-		/* border-radius: 16px; */
-		/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
-		/* border: 1px solid rgba(255, 255, 255, 0.15); */
 	}
 }

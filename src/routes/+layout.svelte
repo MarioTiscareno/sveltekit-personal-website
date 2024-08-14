@@ -46,7 +46,6 @@
 	onDestroy(unsubscribe);
 </script>
 
-<!-- <Svrollbar /> -->
 <nav class="absolute left-0 right-0 z-50 mx-auto max-w-7xl p-4 md:p-6">
 	<ul class="flex items-end justify-between text-slate-700">
 		<li>
@@ -121,22 +120,6 @@
 {/if}
 
 <style lang="postcss">
-	:global(::-webkit-scrollbar) {
-		width: 0.5rem;
-		height: 1em;
-	}
-
-	:global(::-webkit-scrollbar-track) {
-		background: rgb(226 232 240);
-		margin-block: 0.5em;
-	}
-
-	:global(::-webkit-scrollbar-thumb) {
-		background: rgb(71 85 105);
-		border-radius: 100vw;
-		height: 1em;
-	}
-
 	:global(.tooltip) {
 		visibility: hidden;
 		position: absolute;
@@ -145,11 +128,5 @@
 	:global(.tech-icon:hover .tooltip) {
 		visibility: visible;
 		z-index: 100;
-	}
-
-	@media (max-width: 768px) {
-		:global(::-webkit-scrollbar) {
-			display: none;
-		}
 	}
 </style>
