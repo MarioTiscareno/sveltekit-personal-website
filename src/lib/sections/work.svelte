@@ -151,7 +151,7 @@
 			title: 'Software Engineer',
 			workPlace: '@Nasoft USA',
 			body: [
-				'At Nasoft I implemented and maintained the web platform for our customers in the mortgage sector. Back then ASP.NET MVC was still a thing, and it the main web application framework used for the platform, but we also integrated and exposed SOAP web services with WCF.',
+				'At Nasoft I implemented and maintained the web platform for our customers in the mortgage sector. Back then ASP.NET MVC was still a thing, and it was the main web application framework used for the platform, but we also integrated and exposed SOAP web services with WCF.',
 				"This was also during jQuery's heyday, which at the time didn't seem so bad, so we were using it in our front-end."
 			],
 			keywords: [
