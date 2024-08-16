@@ -84,4 +84,4 @@ EMAIL_TO='receiver@your.domain.com'
 MAIL_PROVIDER='mailgun' # mailgun | sendgrid | none
 ```
 
-DON'T remove any variables from the .env file, as this will break the build, instead you can set to empty strings what you don't need.
+DON'T remove any variables from the .env file, as this will break the build, instead just set anything you don't need to empty.
