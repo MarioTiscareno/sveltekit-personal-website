@@ -26,9 +26,12 @@
 			</p>
 			<p class="mt-8 text-sm leading-normal text-slate-400 sm:text-base">
 				In my almost 2 decades of programming, I have seen many trends and fads in my trade. I used
-				to be a fanatic of Uncle Bob's Clean Coding, Clean Architecture and SOLID. Although I think
-				some of these ideas still have value, now I have more appreciation for simplicity and am
-				averse to unjustified complexity, premature optimization and over-engineering in general.
+				to be a fanatic of Uncle Bob's Clean Coding and Clean Architecture. Although I think some of
+				these ideas still have value, now I have more appreciation for simplicity, I am averse to
+				unjustified complexity and premature optimization. I think there is value in principles such
+				as SOLID, TDD, Functional Programming, DDD, etc, but I am not "all-in" in any of these, I
+				believe in using the right tools for the job and I try to identify the key tradeoffs in any
+				project.
 			</p>
 			<p class="mt-8 text-sm leading-normal text-slate-400 sm:text-base">
 				Currently I'm working as a <strong class="font-medium text-slate-300"

@@ -17,9 +17,9 @@
 			skillSetHeading: ['Backend'],
 			skills: [
 				{ name: 'ASP.NET', level: 95, comment: 'Core, 4x, etc.' },
-				{ name: 'Azure Functions', level: 85 },
-				{ name: 'Dapr', level: 70 },
-				{ name: 'MS Orleans', level: 45 }
+				{ name: 'Azure Functions', level: 90 },
+				{ name: 'Dapr', level: 80 },
+				{ name: 'MS Orleans', level: 50 }
 			]
 		},
 		{
@@ -36,7 +36,7 @@
 			skillSetHeading: ['Frontend'],
 			skills: [
 				{ name: 'Svelte/SvelteKit', level: 75 },
-				{ name: 'Tailwind', level: 60 },
+				{ name: 'Tailwind', level: 70 },
 				{ name: 'React/Next', level: 50 },
 				{ name: 'HTMX', level: 40 }
 			]
@@ -53,7 +53,7 @@
 			skillSetHeading: ['CI/CD'],
 			skills: [
 				{ name: 'Azure DevOps', level: 85 },
-				{ name: 'GitHub', level: 40 }
+				{ name: 'GitHub', level: 65 }
 			]
 		},
 		{
@@ -69,15 +69,17 @@
 			skillSetHeading: ['Paradigms and', 'Development Patterns'],
 			skills: [
 				{ name: 'OOP', level: 95 },
-				{ name: 'DDD', level: 85 },
-				{ name: 'TDD', level: 80 },
-				{ name: 'Functional Programming', level: 65 }
+				{ name: 'TDD', level: 90 },
+				{ name: 'DDD', level: 90 },
+				{ name: 'SOLID', level: 90 },
+				{ name: 'Functional Programming', level: 75 }
 			]
 		},
 		{
 			skillSetHeading: ['Misc. Tools'],
 			skills: [
 				{ name: 'Git', level: 85 },
+				{ name: 'Entity Framework', level: 85 },
 				{ name: 'Docker', level: 75 },
 				{ name: 'PowerShell', level: 55 },
 				{ name: 'New Relic', level: 50 },
