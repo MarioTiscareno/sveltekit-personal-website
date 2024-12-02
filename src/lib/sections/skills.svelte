@@ -2,6 +2,8 @@
 	import EditorLine from '$lib/editor-line.svelte';
 	import Window from '$lib/window.svelte';
 
+	const MAX_LINES = 19;
+
 	const skillSets = [
 		{
 			skillSetHeading: ['Languages'],
@@ -137,7 +139,7 @@
 							</div>
 						</EditorLine>
 					{/each}
-					{#each Array(16 - (o.skills.length * 3 + o.skillSetHeading.length)) as _, j}
+					{#each Array(MAX_LINES - (o.skills.length * 3 + o.skillSetHeading.length)) as _, j}
 						<EditorLine />
 					{/each}
 				</Window>
