@@ -72,8 +72,8 @@
 			skills: [
 				{ name: 'OOP', level: 95 },
 				{ name: 'TDD', level: 90 },
-				{ name: 'DDD', level: 90 },
 				{ name: 'SOLID', level: 90 },
+				{ name: 'DDD', level: 75 },
 				{ name: 'Functional Programming', level: 75 }
 			]
 		},
