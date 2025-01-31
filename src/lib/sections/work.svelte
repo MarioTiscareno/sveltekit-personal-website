@@ -28,7 +28,7 @@
 			title: 'Systems Architect',
 			workPlace: '@Encora/Blick Art Materials',
 			body: [
-				'I am currently work on the design and development of backend systems for the Blick online store. This includes both cloud hosted and on-premise services using a variety of technology stacks, mainly .NET and Azure serverless.',
+				'I am currently working on the design and implementation of backend systems for the Blick online store. This includes both cloud hosted and on-premise services using a variety of technology stacks, mainly .NET and Azure serverless.',
 				'This has allowed me to work in multiple business domains such as inventory, pricing, cart, checkout, as well as different architectural approaches such as microservices and event driven.',
 				"Observability and monitoring are a big part of my job, for which I've been using services like Azure Monitor and New Relic.",
 				'Recently we have started introducing AI in our internal processes, to allow users to access our knowledge base with natural language, enriched by our different management systems such as our Git repositories, Jira and Confluence. This has been possible with new tools like Open AI, Azure AI Studio and Pinecone.'
