@@ -53,8 +53,8 @@
 		<p
 			class="mt-12 hidden max-w-[45rem] border-t border-slate-400/25 pt-8 text-sm leading-snug tracking-tight text-slate-600 md:text-base [@media(min-height:600px)]:block"
 		>
-			Hi! I'm a <strong>software engineer</strong> that enjoys building things for the web, solving
-			problems and learning how stuff works. Thanks for stopping by and welcome to my page!<span
+			Hi! I'm a <strong>software engineer</strong> who enjoys building things for the web, solving
+			problems, and learning how stuff works. Thanks for stopping by and welcome to my page!<span
 				class="text-lg">🔥</span
 			>
 		</p>
