@@ -15,8 +15,8 @@
 		<p
 			class="mb-16 pr-24 text-2xl font-medium leading-tight tracking-tight text-slate-300 md:text-3xl lg:w-1/2"
 		>
-			My name is <span class="font-bold">Mario Tiscareño</span>. I'm a software engineer that has
-			been building internet things since 2005.
+			My name is <span class="font-bold">Mario Tiscareño</span>. I'm a software engineer who has
+			been building things for the internet since 2005.
 		</p>
 		<div class="gap-24 text-pretty md:columns-2">
 			<p class="text-sm leading-normal text-slate-400 sm:text-base">
@@ -25,27 +25,24 @@
 				projects.
 			</p>
 			<p class="mt-8 text-sm leading-normal text-slate-400 sm:text-base">
-				In my almost 2 decades of programming, I have seen many trends and fads in my trade. I used
+				In my almost two decades of programming, I have seen many trends and fads in my trade. I used
 				to be a fanatic of Uncle Bob's Clean Coding and Clean Architecture. Although I think some of
-				these ideas still have value, now I have more appreciation for simplicity, I am averse to
+				these ideas still have value, I now have a greater appreciation for simplicity and am averse to
 				unjustified complexity and premature optimization. I think there is value in principles such
-				as SOLID, TDD, Functional Programming, DDD, etc, but I always see them them as tools rather
-				than laws, I believe in using the right tools for the job and I try to identify the key
-				tradeoffs in any project.
+				as SOLID, TDD, Functional Programming, and DDD, but I see them as tools. I believe in using the best tool for the job and I try to identify the key tradeoffs in any project.
 			</p>
 			<p class="mt-8 text-sm leading-normal text-slate-400 sm:text-base">
-				Currently I'm working as a <strong class="font-medium text-slate-300"
-					>Systems Architect</strong
+				Currently, I'm working as a <strong class="font-medium text-slate-300"
+					>Software Developer</strong
 				>
 				at
-				<a class="text-[#fce4b8] underline underline-offset-2" href="https://www.dickblick.com"
-					>Blick Art Materials</a
-				>, where I get to design and implement backend systems for our online store. I am living in
-				Mexico with my wife and son, who I love more than anything. I spend my free time watching
-				movies, running, having fun with my family and learning about technology.
+				<a class="text-[#fce4b8] underline underline-offset-2" href="https://www.beyondsports.nl"
+					>Beyond Sports (Sony)</a
+				>, where I design and implement backend systems for our online store. I live in
+				the Netherlands with my wife and son, whom I love more than anything. I spend my free time watching movies, running, having fun with my family, and learning about technology.
 			</p>
 			<p class="mt-8 text-sm leading-normal text-slate-400 sm:text-base">
-				On this page you'll find a resume of sorts, so keep scrolling to find more about what I do.
+				On this page, you'll find a resume of sorts, so keep scrolling to find out more about what I do.
 				You can report bugs in the <a
 					class="text-[#fce4b8] underline underline-offset-2"
 					href="https://github.com/MarioTiscareno/sveltekit-personal-website">GitHub repo</a

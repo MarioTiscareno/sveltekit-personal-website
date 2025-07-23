@@ -21,17 +21,43 @@
 	import { onMount } from 'svelte';
 	import { activateOnScroll } from '$lib/util';
 
-	const work = [
+		const work = [
+		{
+			from: 'May, 2025',
+			to: 'Present',
+			title: 'Software Developer',
+			workPlace: '@Beyond Sports (Sony)',
+			body: [
+				"At Beyond Sports, I'm part of the team responsible for the backend systems that power real-time viewing experiences for major sporting events. My role focuses on developing and maintaining the infrastructure that ingests, processes, and delivers live data streams to generate these immersive experiences for fans."
+			],
+			keywords: [
+				'ASP.NET Core',
+				'AWS',
+				'DynamoDB',
+				'S3',
+				'AWS Lambda',
+				'CloudFront',
+				'AWS ApiGateway',
+				'CloudWatch',
+				'Cognito',
+				'Git',
+				'Docker',
+				'Data Streams',
+				'Event Driven',
+				'DevOps'
+			],
+			icons: [DotNet, AzureDevops, Docker]
+		},
 		{
 			from: 'Nov, 2019',
-			to: 'Present',
+			to: 'May, 2025',
 			title: 'Systems Architect',
 			workPlace: '@Encora/Blick Art Materials',
 			body: [
-				'I am currently working on the design and implementation of backend systems for the Blick online store. This includes both cloud hosted and on-premise services using a variety of technology stacks, mainly .NET and Azure serverless.',
-				'This has allowed me to work in multiple business domains such as inventory, pricing, cart, checkout, as well as different architectural approaches such as microservices and event driven.',
-				"Observability and monitoring are a big part of my job, for which I've been using services like Azure Monitor and New Relic.",
-				'Recently we have started introducing AI in our internal processes, to allow users to access our knowledge base with natural language, enriched by our different management systems such as our Git repositories, Jira and Confluence. This has been possible with new tools like Open AI, Azure AI Studio and Pinecone.'
+				'I worked on the design and implementation of backend systems for the Blick online store. This included both cloud hosted and on-premise services using a variety of technology stacks, mainly .NET and Azure serverless.',
+				'This allowed me to work in multiple business domains such as inventory, pricing, cart, and checkout, as well as different architectural approaches such as microservices and event-driven.',
+				"Observability and monitoring were a big part of my job, for which I used services like Azure Monitor and New Relic.",
+				'We also introduced AI into our internal processes, allowing users to access our knowledge base with natural language, enriched by our different management systems such as our Git repositories, Jira, and Confluence. This was made possible with new tools like Open AI, Azure AI Studio, and Pinecone.'
 			],
 			keywords: [
 				'ASP.NET Core',
@@ -63,9 +89,9 @@
 			title: 'Fullstack Developer',
 			workPlace: '@iTexico (acquired by Improving)',
 			body: [
-				'One of my main responsibilities was developing the back-end for a money transfer mobile app. Using ASP.NET Core, I built secure, RESTful APIs and integrated with third party services to integrate payments, KYC, fraud detection, banking, etc.',
-				'On the front-end side, I worked with React to build user interfaces and libraries like Redux and MobX for state management.',
-				'I was also involved with the initial setup of CI/CD pipelines on Azure DevOps. Automated building, testing, and deployment was critical for our workflow, helping us deliver new features and updates more efficiently.'
+				'One of my main responsibilities was developing the back-end for a money transfer mobile app. Using ASP.NET Core, I built secure, RESTful APIs and integrated with third-party services to handle payments, KYC, fraud detection, banking, etc.',
+				'On the front-end, I worked with React to build user interfaces and libraries like Redux and MobX for state management.',
+				'I was also involved in the initial setup of CI/CD pipelines on Azure DevOps. Automated building, testing, and deployment were critical for our workflow, helping us deliver new features and updates more efficiently.'
 			],
 			keywords: [
 				'C#',
@@ -99,10 +125,10 @@
 			title: 'Software Engineer',
 			workPlace: '@Softtek',
 			body: [
-				'During my time at Softtek I was lucky to work with two great clients in the wealth management and retail sectors, where I had the chance to learn about compliance, risk management, inventory management, among other business domains.',
-				'I was in charge of the design and implementation of backend systems, with business rules that were complex and consistently changing due to evolving regulations and requirements, yet with emphasis on performance.',
-				'Most of the development work was done in C# and I experienced the transitions of different .NET products, e.g. from WCF, to MVC, to Web API, to ASP.NET Core.',
-				'In the later years I was introduced to "modern" front-end frameworks, i.e. Angular, so I gained some experience with JavaScript and Typescript. At the time state management on the front-end was rapidly changing and very opinionated, for me this meant working with Redux to manage the state of UIs that required higher complexity.'
+				'During my time at Softtek, I was lucky to work with two great clients in the wealth management and retail sectors, where I had the chance to learn about compliance, risk management, and inventory management, among other business domains.',
+				'I was in charge of the design and implementation of backend systems, with business rules that were complex and consistently changing due to evolving regulations and requirements, yet with an emphasis on performance.',
+				'Most of the development work was done in C#, and I experienced the transitions of different .NET products, e.g., from WCF, to MVC, to Web API, to ASP.NET Core.',
+				'In later years, I was introduced to "modern" front-end frameworks, i.e., Angular, so I gained some experience with JavaScript and Typescript. At the time, state management on the front-end was rapidly changing and very opinionated; for me, this meant working with Redux to manage the state of UIs that required higher complexity.'
 			],
 			keywords: [
 				'C#',
@@ -129,8 +155,8 @@
 			title: 'Founder and Developer',
 			workPlace: '@Tique Tecnologias de Informacion',
 			body: [
-				'This was a small consultancy company that I started with group of friends from college. We were able to sell and implement several development projects for local government agencies and businesses.',
-				'We mainly provided web presence and mobile applications for our customers, using different technologies like ASP.NET, React and Angular.'
+				'This was a small consultancy company that I started with a group of friends from college. We were able to sell and implement several development projects for local government agencies and businesses.',
+				'We mainly provided web presence and mobile applications for our customers, using different technologies like ASP.NET, React, and Angular.'
 			],
 			keywords: [
 				'C#',
@@ -151,7 +177,7 @@
 			title: 'Software Engineer',
 			workPlace: '@Nasoft USA',
 			body: [
-				'At Nasoft I implemented and maintained the web platform for our customers in the mortgage sector. Back then ASP.NET MVC was still a thing, and it was the main web application framework used for the platform, but we also integrated and exposed SOAP web services with WCF.',
+				'At Nasoft, I implemented and maintained the web platform for our customers in the mortgage sector. Back then, ASP.NET MVC was a popular choice, and it was the main web application framework used for the platform, but we also integrated and exposed SOAP web services with WCF.',
 				"This was also during jQuery's heyday, which at the time didn't seem so bad, so we were using it in our front-end."
 			],
 			keywords: [
@@ -175,7 +201,7 @@
 			title: 'Developer',
 			workPlace: '@Banamex CitiGroup',
 			body: [
-				"At Banamex I worked on an internal web application for our mortgage branch's analysts to manage risk and loan approvals. Here I had the opportunity to get up close to the database and is where I gained my initial experience with SQL Server.",
+				"At Banamex, I worked on an internal web application for our mortgage branch's analysts to manage risk and loan approvals. This was my first opportunity to work closely with a database, and it's where I gained my initial experience with SQL Server.",
 				'The application was built with ASP.NET Web Forms and vanilla JS.'
 			],
 			keywords: [
@@ -198,9 +224,9 @@
 			title: 'Developer',
 			workPlace: '@Arquitectura en Sistemas Computacionales Integrales',
 			body: [
-				'At ASCI I worked for a short time, but it was fun nevertheless. My first project involved writing firmware in C for wireless network access points.',
-				'Here is where I learned about version control, unit testing, code quality, and how it is like working in a real development team in general.',
-				'Later I moved on to a web development project, where I built a web application with ASP.NET Web Forms and JavaScript which integrated with Google Maps and GPS tracking devices, at the time this was pretty new stuff.'
+				'At ASCI, I worked for a short time, but it was fun nevertheless. My first project involved writing firmware in C for wireless network access points.',
+				"Here is where I learned about version control, unit testing, code quality, and what it's like to work in a real development team.",
+				'Later, I moved on to a web development project, where I built a web application with ASP.NET Web Forms and JavaScript which integrated with Google Maps and GPS tracking devices, which was cutting-edge technology at the time.'
 			],
 			keywords: [
 				'C#',
@@ -220,8 +246,8 @@
 			title: 'Developer',
 			workPlace: '@AgroClima Informatica Avanzada',
 			body: [
-				'This was my first job as a software engineer and I was pretty much the entire IT department. This was a small insurance company that specialized in agribusiness.',
-				'I got to learn about networks, Linux, web servers, databases, basic web development concepts and a lot of other stuff in between. This is when I first started writing ASP.NET web apps in C#, this was when version 2.0 had just been released.',
+				'This was my first job as a software engineer, and I was pretty much the entire IT department. This was a small insurance company that specialized in agribusiness.',
+				'I got to learn about networks, Linux, web servers, databases, basic web development concepts, and many other related concepts. This is when I first started writing ASP.NET web apps in C#, around the time version 2.0 was released.',
 				'I even did some Flash based web UIs that displayed weather forecast maps.'
 			],
 			keywords: ['C#', 'ASP.NET', 'JavaScript', 'Linux', 'Flash', 'Insurance', 'Agribusiness'],
