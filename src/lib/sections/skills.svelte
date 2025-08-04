@@ -11,14 +11,14 @@
 				{ name: 'C#', level: 95 },
 				{ name: 'JavaScript', level: 75 },
 				{ name: 'TypeScript', level: 75 },
-				{ name: 'Python', level: 50 },
+				{ name: 'Python', level: 65 },
 				{ name: 'Go', level: 40 }
 			]
 		},
 		{
 			skillSetHeading: ['Backend'],
 			skills: [
-				{ name: 'ASP.NET', level: 95, comment: 'Core, 4x, etc.' },
+				{ name: 'ASP.NET', level: 95, comment: 'Core, Framework, etc.' },
 				{ name: 'Azure Functions', level: 90 },
 				{ name: 'Dapr', level: 80 },
 				{ name: 'MS Orleans', level: 50 }
@@ -29,8 +29,9 @@
 			skills: [
 				{ name: 'Cosmos DB', level: 90 },
 				{ name: 'Redis', level: 85 },
-				{ name: 'SQL Server', level: 75 },
-				{ name: 'Postgres', level: 50 },
+				{ name: 'SQL Server', level: 85 },
+				{ name: 'DynamoDB', level: 75 },
+				{ name: 'Postgres', level: 60 },
 				{ name: 'Pinecone', level: 45 }
 			]
 		},
@@ -47,6 +48,7 @@
 			skillSetHeading: ['Cloud'],
 			skills: [
 				{ name: 'Azure', level: 85 },
+				{ name: 'AWS', level: 65 },
 				{ name: 'Akamai', level: 40 },
 				{ name: 'Cloudflare', level: 35 }
 			]
