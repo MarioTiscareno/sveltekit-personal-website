@@ -120,12 +120,12 @@
 				</p>
 				<p class="text-lg text-slate-500">...and stuff that I am still improving on.</p>
 			</div>
-			{#each skillSets as o, i}
+			{#each skillSets as o, _i}
 				<Window class="h-full">
-					{#each o.skillSetHeading as h, j}
+					{#each o.skillSetHeading as h, _j}
 						<EditorLine class="text-slate-400/80"># {h}</EditorLine>
 					{/each}
-					{#each o.skills as s, j}
+					{#each o.skills as s, _j}
 						<EditorLine />
 						<EditorLine
 							>{s.name}
@@ -141,7 +141,7 @@
 							</div>
 						</EditorLine>
 					{/each}
-					{#each Array(MAX_LINES - (o.skills.length * 3 + o.skillSetHeading.length)) as _, j}
+					{#each Array(MAX_LINES - (o.skills.length * 3 + o.skillSetHeading.length)) as _item, _j}
 						<EditorLine />
 					{/each}
 				</Window>

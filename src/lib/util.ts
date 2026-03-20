@@ -5,8 +5,8 @@ export function activateOnScroll(selector: string) {
 		let minDist = 50000;
 
 		elements.forEach((el) => {
-			let c = el as HTMLElement;
-			let cY = c.getBoundingClientRect().top;
+			const c = el as HTMLElement;
+			const cY = c.getBoundingClientRect().top;
 			if (cY > 0 && cY < minDist) {
 				minDist = cY;
 				c.classList.add('active');
@@ -17,20 +17,17 @@ export function activateOnScroll(selector: string) {
 	});
 }
 
-export function preventDefault(fn: Function) {
+export function preventDefault(fn: (event: Event) => unknown) {
 	return function (event: Event) {
 		event.preventDefault();
-		// @ts-ignore
-		fn.call(this, event);
+		fn(event);
 	};
 }
 
-export function self(fn: Function) {
+export function self(fn: (event: Event) => unknown) {
 	return function (event: Event) {
-		// @ts-ignore
-		if (event.target !== this) return;
-		// @ts-ignore
-		return fn.call(this, event);
+		if (event.target !== event.currentTarget) return;
+		return fn(event);
 	};
 }
 

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte';
+
 	let {
 		children,
 		close = null,
@@ -6,11 +8,11 @@
 		style = 'dark',
 		blurred = false
 	}: {
-		close?: any;
+		close?: (() => void) | null;
 		class?: string;
 		style?: 'dark' | 'light';
 		blurred?: boolean;
-		children?: any;
+		children?: Snippet;
 	} = $props();
 
 	let dark = style === 'dark';
@@ -36,7 +38,7 @@
 		<div class="h-3 w-3 rounded-full bg-green-400"></div>
 	</div>
 	<div class="counter-reset-line -ml-2 pt-4 text-sm">
-		{@render children()}
+		{@render children?.()}
 	</div>
 </div>
 
