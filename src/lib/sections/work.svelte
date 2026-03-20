@@ -22,13 +22,12 @@
 	import { activateOnScroll } from '$lib/util';
 	import AwsS3 from '$lib/icons/aws-s3.svelte';
 	import AwsLambda from '$lib/icons/aws-lambda.svelte';
-	import AwsApiGateway from '$lib/icons/aws-api-gateway.svelte';
 	import Rabbitmq from '$lib/icons/rabbitmq.svelte';
 	import AwsDynamo from '$lib/icons/aws-dynamo.svelte';
 	import AwsCdk from '$lib/icons/aws-cdk.svelte';
 	import Python from '$lib/icons/python.svelte';
 
-		const work = [
+	const work = [
 		{
 			from: 'May, 2025',
 			to: 'Present',
@@ -36,7 +35,7 @@
 			workPlace: '@Beyond Sports (Sony)',
 			body: [
 				"At Beyond Sports, I'm part of the team responsible for the backend systems that power real-time viewing experiences for major sporting events. My role focuses on developing and maintaining the infrastructure that ingests, processes, and delivers live data streams to generate these immersive experiences for fans.",
-				'This involves working with a variety of technologies, including AWS services like DynamoDB, S3, Lambda, and API Gateway, as well as event-driven architectures using RabbitMQ and AWS EventBridge. I also utilize the AWS CDK for infrastructure as code, which allows us to manage our cloud resources efficiently.',
+				'This involves working with a variety of technologies, including AWS services like DynamoDB, S3, Lambda, and API Gateway, as well as event-driven architectures using RabbitMQ and AWS EventBridge. I also utilize the AWS CDK for infrastructure as code, which allows us to manage our cloud resources efficiently.'
 			],
 			keywords: [
 				'ASP.NET Core',
@@ -57,7 +56,7 @@
 				'RabbitMQ',
 				'CDK'
 			],
-			icons: [DotNet, Python, AwsDynamo, AwsS3, AwsLambda, AwsCdk, Rabbitmq, Docker ]
+			icons: [DotNet, Python, AwsDynamo, AwsS3, AwsLambda, AwsCdk, Rabbitmq, Docker]
 		},
 		{
 			from: 'Nov, 2019',
@@ -68,8 +67,7 @@
 				'I worked on the design and implementation of backend systems for the Blick online store. This included both cloud hosted and on-premise services using a variety of technology stacks, mainly .NET and Azure serverless.',
 				'I also introduced AI into our internal processes, allowing users to access our knowledge base with natural language, using the RAG pattern to enrich context with data from our management systems, such as our Git repositories, Jira, and Confluence. This was made possible with tools like Open AI, Azure AI Studio, and Pinecone.',
 				'My role at Blick allowed me to work in multiple business domains such as inventory, pricing, cart, and checkout, as well as different architectural approaches such as microservices and event-driven.',
-				"Observability and monitoring were a big part of my job, for which I used services like Azure Monitor and New Relic.",
-				
+				'Observability and monitoring were a big part of my job, for which I used services like Azure Monitor and New Relic.'
 			],
 			keywords: [
 				'ASP.NET Core',

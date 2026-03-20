@@ -13,7 +13,7 @@
 	let submitted = $state(false);
 	let error = $state(false);
 
-	async function handleContactSubmit(event: SubmitEvent) {
+	async function handleContactSubmit(event: Event) {
 		dirty = true;
 
 		if (!(event.target as HTMLInputElement)!.form!.checkValidity()) return;
@@ -35,7 +35,7 @@
 			if (!response.ok) {
 				error = true;
 			}
-		} catch (e) {
+		} catch {
 			error = true;
 		}
 
@@ -46,7 +46,7 @@
 	}
 
 	const delay = (milliseconds: number) =>
-		new Promise((resolve, reject) => {
+		new Promise((resolve) => {
 			setTimeout(() => resolve(true), milliseconds);
 		});
 </script>

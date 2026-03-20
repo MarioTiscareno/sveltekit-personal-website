@@ -1,10 +1,13 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte';
+
+	let { children, class: className = '' }: { children?: Snippet; class?: string } = $props();
 </script>
 
 <code
-	class={$$restProps.class +
+	class={className +
 		" relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-4 before:inline-block before:w-10 before:border-r before:border-r-slate-600 before:pr-4 before:text-right before:font-['Roboto_Mono'] before:text-sm before:text-slate-600"}
-	><slot /></code
+	>{@render children?.()}</code
 >
 
 <style lang="postcss">

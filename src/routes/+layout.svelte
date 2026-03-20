@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import { onDestroy, setContext } from 'svelte';
+	import type { Snippet } from 'svelte';
 	import { writable } from 'svelte/store';
 	import ContactModal from '$lib/contact-modal.svelte';
 	import { fade } from 'svelte/transition';
@@ -9,13 +10,15 @@
 	import GitHub from '$lib/icons/git-hub.svelte';
 	import LinkedIn from '$lib/icons/linked-in.svelte';
 
+	let { children }: { children: Snippet } = $props();
+
 	var modal = setContext('modal', {
 		visible: writable(false)
 	});
 
 	let { visible } = modal;
 
-	function handleClickClose(event: PointerEvent) {
+	function handleClickClose(event: Event) {
 		if ((event as PointerEvent)?.pointerId === -1) return;
 
 		toggleModal();
@@ -68,7 +71,7 @@
 	</ul>
 </nav>
 <main>
-	<slot />
+	{@render children()}
 </main>
 <footer
 	class="left-0 -mt-2 w-full overflow-hidden bg-gradient-to-b from-slate-900 to-slate-900 py-24"

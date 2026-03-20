@@ -20,12 +20,16 @@
 		</p>
 		<div class="gap-24 text-pretty md:columns-2">
 			<p class="text-sm leading-normal text-slate-400 sm:text-base">
-				I've mostly worked on backend stuff in C# and the .NET space, but I have some experience with Python, TypeScript/JavaScript and frontend frameworks like Svelte and React. I also enjoy using Go in my personal
-				projects.
+				I've mostly worked on backend stuff in C# and the .NET space, but I have some experience
+				with Python, TypeScript/JavaScript and frontend frameworks like Svelte and React. I also
+				enjoy using Go in my personal projects.
 			</p>
 			<p class="mt-8 text-sm leading-normal text-slate-400 sm:text-base">
-				In my almost two decades of programming, I have seen many trends and fads in my trade. I am averse to unjustified complexity and premature optimization. I think there is value in principles such
-				as SOLID, TDD, Functional Programming, and DDD, but I see them only as tools. I believe in using the best tool for the job and I try to identify the key tradeoffs in any project.
+				In my almost two decades of programming, I have seen many trends and fads in my trade. I am
+				averse to unjustified complexity and premature optimization. I think there is value in
+				principles such as SOLID, TDD, Functional Programming, and DDD, but I see them only as
+				tools. I believe in using the best tool for the job and I try to identify the key tradeoffs
+				in any project.
 			</p>
 			<p class="mt-8 text-sm leading-normal text-slate-400 sm:text-base">
 				Currently, I'm working as a <strong class="font-medium text-slate-300"
@@ -34,12 +38,13 @@
 				at
 				<a class="text-[#fce4b8] underline underline-offset-2" href="https://www.beyondsports.nl"
 					>Beyond Sports (Sony)</a
-				>, where I design and implement backend systems for our live sports platform. I live in
-				the Netherlands with my wife and son, whom I love more than anything. I spend my free time watching movies, running, having fun with my family, and learning about technology.
+				>, where I design and implement backend systems for our live sports platform. I live in the
+				Netherlands with my wife and son, whom I love more than anything. I spend my free time
+				watching movies, running, having fun with my family, and learning about technology.
 			</p>
 			<p class="mt-8 text-sm leading-normal text-slate-400 sm:text-base">
-				On this page, you'll find a resume of sorts, so keep scrolling to find out more about what I do.
-				You can report bugs in the <a
+				On this page, you'll find a resume of sorts, so keep scrolling to find out more about what I
+				do. You can report bugs in the <a
 					class="text-[#fce4b8] underline underline-offset-2"
 					href="https://github.com/MarioTiscareno/sveltekit-personal-website">GitHub repo</a
 				> or leave a star if you like what you see. Yes, all of this is open source so feel free to take

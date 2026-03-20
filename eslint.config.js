@@ -28,6 +28,18 @@ export default [
 		}
 	},
 	{
+		// Downgrade new eslint-plugin-svelte v3 rules that fire on existing code
+		// and configure unused-vars to allow _ prefixed identifiers
+		rules: {
+			'svelte/require-each-key': 'warn',
+			'svelte/no-navigation-without-resolve': 'off',
+			'@typescript-eslint/no-unused-vars': [
+				'error',
+				{ varsIgnorePattern: '^_', argsIgnorePattern: '^_', caughtErrorsIgnorePattern: '^_' }
+			]
+		}
+	},
+	{
 		ignores: ['build/', '.svelte-kit/', 'dist/']
 	}
 ];

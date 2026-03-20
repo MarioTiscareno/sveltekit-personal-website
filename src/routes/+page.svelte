@@ -1,14 +1,11 @@
 <script lang="ts">
-	import Window from '$lib/window.svelte';
 	import { onMount } from 'svelte';
-	import { fade } from 'svelte/transition';
 	import Hero from '$lib/sections/hero.svelte';
 	import About from '$lib/sections/about.svelte';
 	import Skills from '$lib/sections/skills.svelte';
-	import { activateOnScroll, focus, preventDefault, self, trapFocus } from '$lib/util';
+	import { activateOnScroll } from '$lib/util';
 	import Work from '$lib/sections/work.svelte';
 	import Education from '$lib/sections/education.svelte';
-	import ContactModal from '$lib/contact-modal.svelte';
 
 	onMount(() => {
 		activateOnScroll('.cursor');
