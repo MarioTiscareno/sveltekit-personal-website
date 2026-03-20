@@ -1,7 +1,8 @@
 FROM node:21-alpine AS builder
 WORKDIR /app
-COPY package.json .
-RUN npm install
+RUN corepack enable
+COPY package.json pnpm-lock.yaml .
+RUN pnpm install --frozen-lockfile
 COPY . .
 
 ARG SENDGRID_API_KEY
@@ -26,7 +27,7 @@ ARG EMAIL_TO
 ENV EMAIL_TO=$EMAIL_TO
 
 RUN npm run build
-RUN npm prune --production
+RUN pnpm prune --prod
 
 FROM node:21-alpine
 WORKDIR /app
